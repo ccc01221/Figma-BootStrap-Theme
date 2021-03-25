@@ -377,13 +377,17 @@ input:checked + .slider:before {
 	color: #50CDD0;
 	display: inline-block;
 	text-decoration: none;
-	padding: 5px 15px;
-	margin-left: 30px;
+	padding: 4px 12px;
 	vertical-align: middle;
 }
 .btn-p:hover{
 	text-decoration: none;
 }
+.address-list span {
+    vertical-align: middle;
+    display: inline-block;
+}
+
 .address-list{
 	background: #F6F7FB;
 	border-radius: 16px;
@@ -624,6 +628,38 @@ vertical-align: middle;
     padding: 10px 28px;
 }
 
+.btn-p {
+  
+    line-height: 150%;
+    padding: 3px 10px;
+}
+.address-list span {
+    font-size: 14px;
+}
+.address-list {
+    padding: 15px 20px;
+ 
+}
+.btn-edit {
+    padding: 5px 15px 0 0px;
+     font-size: 14px;
+}
+.btn-delete {
+    padding: 5px 0 0 15px;
+     font-size: 14px;
+}
+.font-size-32 {
+    line-height: 1.5 !important;
+}
+.profile-name {
+    font-size: 14px;
+ }
+.profile-logout {
+    font-size: 16px;
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+}
 
 }
 
