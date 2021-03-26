@@ -569,9 +569,6 @@ vertical-align: middle;
 	text-align: right;
 	color: #9994B1;
 }
-.w-100{
-	width: 100%
-}
 
 .p-relative{
 	position: relative;
@@ -808,7 +805,7 @@ z-index: 9999;
 .memberships  .switch-label {
     float: left;
     margin-right: 20px;
-    min-width: 40px;
+    min-width: 36px;
 }
 
 .btn-light-new{
@@ -849,6 +846,12 @@ z-index: 9999;
 .account .tabs-left .nav-tabs > li .nav-link {
 	width: auto;
 	display: inline-block;
+}
+.w-100{
+	width: 100%
+}
+.width-100{
+	width: 100%
 }
 
 }
