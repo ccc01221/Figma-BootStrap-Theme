@@ -13,7 +13,7 @@
     width: 40px;
     height: 40px;
     background-repeat: no-repeat;
-    background-size: 50px;
+    background-size: 48px;
     background-position: center;
     border-radius: 8px;
     margin: 0 10px;
@@ -59,7 +59,7 @@ line-height: 150%;
     border-left: 0;
     background: #FFFFFF;
     border-radius: 16px;
-    margin: 0 0 25px 0;
+    margin: 0 0 24px 0;
     text-align: center;
     color: #291C64;
     font-size: 16px;
@@ -79,7 +79,7 @@ line-height: 150%;
 .account__settings {
     background: #fff;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 16px;
 }
 .account__settings h3{
 	font-size: 24px;
@@ -105,6 +105,12 @@ line-height: 150%;
 	color: #291C64;
 	text-transform: capitalize;
 }
+.width-95{
+	width: 95%
+}
+.my-32{
+	margin: 32px 0;
+}
 .btn-change{
 background: #50CDD0;
 border-radius: 18px;
@@ -116,7 +122,6 @@ display: inline-block;
 text-align: center;
 color: #FFFFFF;
 padding: 10px 30px;
-padding: 10px 40px;
 }
 .btn-change:hover,.btn-change:focus{
 	background: #39B6B9;
@@ -284,7 +289,7 @@ input:checked + .slider:before {
     text-align: center;
 }
 .change-pass .modal-header1 {
-    padding: 30px 50px;
+    padding: 30px 50px 5px;
 }
 
 .change-pass .modal-body {
@@ -312,7 +317,7 @@ input:checked + .slider:before {
 	font-size: 16px;
 	line-height: 150%;
 	color: #291C64;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	text-transform: capitalize;
 }
 
@@ -323,14 +328,17 @@ input:checked + .slider:before {
 	line-height: 170%;
 	text-align: right;
 	color: #50CDD0;
+	display: inline-block;
+margin-top: 8px;
 }
 .modal-header1 {
     position: relative;
 }
-.modal-header1  .close {
+.modal-header1 .close {
     position: absolute;
     right: 50px;
-	top: 30px;
+    top: 25px;
+    font-size: 30px;
 }
 
 .flex {
@@ -511,29 +519,120 @@ vertical-align: middle;
 	margin-bottom: 15px;
 }
 
+/******LOGIN PAGE CSS START HERE********/
 
+.header-right{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: right;
+	color: #291C64;
+}
 
+.header-right a{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: right;
+	color: #50CDD0;
+}
 
+.grey-bg{
+	background: #F6F7FB;
+}
 
+.login-header{
+	min-height: 90px !important;
+}
+.login {
+    margin-top: 50px;
+    background: #F6F7FB;
+    padding-top: 50px
+}
 
+.login__header{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 124%;
+	text-align: center;
+	color: #291C64;
+	margin: 15px 0 30px;
+}
+.forgot-pass{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: right;
+	color: #9994B1;
+}
+.w-100{
+	width: 100%
+}
 
+.p-relative{
+	position: relative;
+}
+.eye-icon{
+	display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    vertical-align: middle; 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
 
+.btn-back{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: #756D98;
+	display: inline-block;
+}
+.nps{
+	background: #291C64;
+	border-radius: 8px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 150%;
+	color: #FFFFFF;
+	padding: 12px 30px;
+	display: inline-block;
+	position: relative;
+top: -77px;
+z-index: 9999;
+}
 
+.login__header2{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: #291C64;
+	text-transform: inherit;
+}
+.form-group.step-2 input {
+    width: 45px;
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.form-group.step-2{
+	text-align: center;
+}
 
 		
 		
@@ -580,6 +679,8 @@ vertical-align: middle;
 
 .profile-right {
     margin-top: 15px;
+    text-align: right;
+
 }
 
 .cdn-customer{
@@ -597,13 +698,14 @@ vertical-align: middle;
 }
 
 .change-pass .modal-header1 {
-    padding: 30px 30px;
+    padding: 30px 30px 0;
 }
 .change-pass .modal-body {
     padding: 30px 30px;
 }
 .change-pass .modal-footer {
     padding: 10px 30px;
+    border-top: 0;
 }
 .modal-header1 .close {
     position: absolute;
@@ -623,9 +725,11 @@ vertical-align: middle;
 }
 .edit-add .modal-footer {
     padding: 10px 30px;
+    border-top: 0px;
 }
 .btn-change {
     padding: 10px 28px;
+    width: 100%;
 }
 
 .btn-p {
@@ -649,7 +753,7 @@ vertical-align: middle;
      font-size: 14px;
 }
 .font-size-32 {
-    line-height: 1.5 !important;
+    line-height: 1.4 !important;
 }
 .profile-name {
     font-size: 14px;
@@ -659,6 +763,92 @@ vertical-align: middle;
     display: block;
     text-align: right;
     margin-top: 8px;
+}
+.profile-logout:hover,.profile-logout:focus{
+	color: #ddd;
+}
+.account__pic {
+    max-width: 42%;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.account__pic ~ .btn-box {
+    max-width: 54%;
+    display: inline-block;
+}
+
+ .account__pic ~ .btn-box .btn-change {
+    padding: 7px 18px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 13px;
+}
+.dealer-box h4 {
+    margin-bottom: 10px;
+    margin-top: 2px;
+}
+.dealer-box p {
+    font-size: 14px;
+ }
+
+.dealer-box {
+    padding: 20px 20px;
+}
+.memberships h3{
+	 font-size: 14px;
+	 margin-bottom: 20px;
+}
+.memberships .switch-box {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 0;
+}
+.memberships  .switch-label {
+    float: left;
+    margin-right: 20px;
+    min-width: 40px;
+}
+
+.btn-light-new{
+	display: none;
+}
+.city-name {
+    margin: 12px 0;
+}
+.delete-add .btn-light-new {
+    display: inline-block;
+}
+.delete-add .btn-change {
+    display: inline-block;
+    width: auto;
+}
+
+#header .header-btn-collapse-nav {
+    left: -20px;
+}
+.tabs-vertical .nav-tabs {
+    border-bottom: none;
+    display: block;
+    height: 100%;
+    float: none;
+    padding: 0;
+    vertical-align: top;
+    min-width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    max-width: 320px;
+}
+.tabs-left .nav-tabs > li {
+    margin-right: 10px;
+}
+.tabs-vertical .nav-tabs > li {
+    display: inline-block;
+}
+.account .tabs-left .nav-tabs > li .nav-link {
+	width: auto;
+	display: inline-block;
 }
 
 }
