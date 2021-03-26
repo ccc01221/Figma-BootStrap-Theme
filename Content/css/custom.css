@@ -596,6 +596,9 @@ vertical-align: middle;
 	color: #756D98;
 	display: inline-block;
 }
+.nps-body{
+	position: relative;
+}
 .nps{
 	background: #291C64;
 	border-radius: 8px;
@@ -630,7 +633,18 @@ z-index: 9999;
 .form-group.step-2{
 	text-align: center;
 }
-
+p {
+    color: #756D98;
+}
+.login__header3{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 117%;
+	color: #291C64;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
 		
 		
 @media only screen and (min-width: 1920px) 
@@ -853,6 +867,27 @@ z-index: 9999;
 .width-100{
 	width: 100%
 }
+.header-right.new-one {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #291C64;
+    max-width: 75%;
+    margin: 0px auto 35px;
+}
+.login__header3{
+	font-size: 34px;
+	line-height: 40px;
+}
+.form-group.step-2 input {
+    width: 40px;
+    }
+.nps{
+	top: -11px;
+}
+
 
 }
 
