@@ -67,7 +67,7 @@
     <!------------------------------
     Header Content Starts here 
     -------------------------------->
-		<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 62, 'stickySetTop': '-62px', 'stickyChangeLogo': true}">
+		<header id="header" class="d-none d-md-block" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 62, 'stickySetTop': '-62px', 'stickyChangeLogo': true}">
 			<div class="header-body">
 				<div class="header-container container">
 					<div class="d-none">
@@ -108,7 +108,66 @@
     <!------------------------------
     Header Content Ends here 
     -------------------------------->
+    <!------------------------------
+    MOBILE Header Content Content here 
+    -------------------------------->
+    <div class="mobile-header d-md-none d-flex">
+    <div class="container">
+    	<div class="row justify-content-center">
+    		<div class="col-7">
+    			<a class="logo"  href="/">
+				<img alt="CDN Publishing" src="content/img/09222020/greysheet-logo-color-2020.svg"class="img-fluid">
+									</a>
+    		</div>
+    		<div class="col-3 text-center">
+    		<a class="bag" href="/">
+			<img alt="CDN Publishing" src="content/img/bag.png"class="img-fluid">
+			</a>	
+    		</div>
+    		<div class="col-2">
+    			 <div class="toggle-menu">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </div>
 
+    		</div>
+    	</div>
+    <nav class="nav-bar">
+    	
+    <ul class="nav-list list-less">
+      <li class="nav-list-item"><a href="" class="nav-link">Publications</a></li>
+      <li class="nav-list-item"><a href="" class="nav-link">Prices</a></li>
+      <li class="nav-list-item">
+        <a href="" class="nav-link">News</a>
+      </li>
+      <li class="nav-list-item"><a href="" class="nav-link">Dealers</a></li>
+      <li class="nav-list-item">
+        <a href="" class="nav-link">Events</a>
+      </li>
+       <li class="nav-list-item">
+        <a href="javascript:void(0)"  class="nav-link" id="list-more">+ More</a>
+      </li>
+	 </ul>
+	  <ul class="nav-list list-more">
+	  	<a href="javascript:void(0)" class="" id="list-less"><img src="content/img/list-less.png" alt="list-back"></a>
+      <li class="nav-list-item"><a href="" class="nav-link">News</a></li>
+      <li class="nav-list-item"><a href="" class="nav-link">News</a></li>
+      <li class="nav-list-item">
+        <a href="" class="nav-link">Podcasts</a>
+      </li>
+      <li class="nav-list-item"><a href="" class="nav-link">Videos</a></li>
+    
+	 </ul>
+
+    <div class="last-list">
+      	<a href="login.html" class="user-login"><img src="content/img/user.png" alt="user"> Log In</a>
+      	<a href="#" class="btn-change btn-subscribe">Subscribe</a>
+      </div>	
+  </nav>
+</div>
+
+</div>
 
 
 
@@ -431,6 +490,25 @@ $(function () {
       $("#password1").attr("type", "password");
     }
   });
+  
+   const toggleButton = document.querySelector(".toggle-menu");
+const navBar = document.querySelector(".nav-bar");
+toggleButton.addEventListener("click", () => {
+  navBar.classList.toggle("toggle");
+});
+
+
+
+$("#list-more").click(function(){
+	$(".list-less").hide();
+	$(".list-more").show();
+})
+$("#list-less").click(function(){
+	$(".list-less").show();
+	$(".list-more").hide();
+})
+
+
 });
 
 
